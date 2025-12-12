@@ -1,0 +1,85 @@
+---
+const experiences = [
+  {
+    title: 'Technical Lead',
+    company: 'Enterprise Company',
+    period: '2022 - Present',
+    description: 'Leading a team of 8+ developers. Architecting microservices solutions, implementing CI/CD pipelines, and driving technical decisions across multiple projects.',
+    achievements: [
+      'Reduced deployment time by 70% through automated CI/CD',
+      'Designed systems handling 100K+ daily active users',
+      'Mentored 5 junior developers to mid-level positions',
+      'Implemented cost-saving cloud optimizations (30% reduction)',
+    ],
+  },
+  {
+    title: 'Senior Backend Developer',
+    company: 'Tech Startup',
+    period: '2020 - 2022',
+    description: 'Developed core backend services and APIs. Implemented authentication systems, payment integrations, and real-time features.',
+    achievements: [
+      'Built microservices architecture from monolith',
+      'Integrated multiple payment gateways',
+      'Implemented real-time notification system',
+      'Reduced API response time by 60%',
+    ],
+  },
+  {
+    title: 'Backend Developer',
+    company: 'Software House',
+    period: '2018 - 2020',
+    description: 'Developed web applications and REST APIs for various clients. Worked with multiple tech stacks and industries.',
+    achievements: [
+      'Delivered 15+ client projects on time',
+      'Learned multiple programming languages and frameworks',
+      'Implemented secure authentication systems',
+      'Built integrations with third-party services',
+    ],
+  },
+];
+---
+
+<section id="experience" class="py-20 bg-dark-card/30">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center">Work Experience</h2>
+    <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+      My professional journey in software engineering
+    </p>
+
+    <div class="relative">
+      <!-- Timeline line -->
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-dark-border"></div>
+
+      <div class="space-y-12">
+        {experiences.map((exp, index) => (
+          <div class={`relative flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8`}>
+            <!-- Timeline dot -->
+            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-dark-bg z-10"></div>
+
+            <!-- Content -->
+            <div class={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
+              <div class="card">
+                <span class="text-primary text-sm font-mono">{exp.period}</span>
+                <h3 class="text-xl font-semibold text-white mt-1">{exp.title}</h3>
+                <p class="text-gray-400 mb-4">{exp.company}</p>
+                <p class="text-gray-300 text-sm mb-4">{exp.description}</p>
+
+                <ul class={`space-y-2 ${index % 2 === 0 ? 'md:text-right' : ''}`}>
+                  {exp.achievements.map((achievement) => (
+                    <li class="text-gray-400 text-sm flex items-start gap-2">
+                      <span class="text-primary mt-1 flex-shrink-0">▹</span>
+                      <span>{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <!-- Spacer for alternating layout -->
+            <div class="hidden md:block w-1/2"></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,101 @@
+---
+const skillCategories = [
+  {
+    title: 'Languages',
+    icon: '💻',
+    skills: [
+      { name: 'Go', level: 95 },
+      { name: 'Rust', level: 75 },
+      { name: 'TypeScript', level: 90 },
+      { name: 'Python', level: 85 },
+      { name: 'Java', level: 80 },
+      { name: 'C#/.NET', level: 80 },
+      { name: 'PHP', level: 85 },
+      { name: 'C++', level: 70 },
+    ],
+  },
+  {
+    title: 'Infrastructure',
+    icon: '☁️',
+    skills: [
+      { name: 'AWS', level: 90 },
+      { name: 'GCP', level: 85 },
+      { name: 'Kubernetes', level: 90 },
+      { name: 'Docker', level: 95 },
+      { name: 'Terraform', level: 85 },
+      { name: 'Linux', level: 95 },
+      { name: 'Nginx', level: 90 },
+      { name: 'CI/CD', level: 90 },
+    ],
+  },
+  {
+    title: 'Databases',
+    icon: '🗄️',
+    skills: [
+      { name: 'PostgreSQL', level: 90 },
+      { name: 'MongoDB', level: 85 },
+      { name: 'Redis', level: 90 },
+      { name: 'MySQL', level: 85 },
+      { name: 'Elasticsearch', level: 75 },
+    ],
+  },
+  {
+    title: 'Architecture',
+    icon: '🏗️',
+    skills: [
+      { name: 'Microservices', level: 95 },
+      { name: 'System Design', level: 90 },
+      { name: 'API Design', level: 95 },
+      { name: 'Event-Driven', level: 85 },
+      { name: 'Clean Architecture', level: 90 },
+    ],
+  },
+];
+---
+
+<section id="skills" class="py-20 bg-dark-card/30">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center">Skills & Expertise</h2>
+    <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+      Technologies and tools I work with
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {skillCategories.map((category) => (
+        <div class="card">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="text-2xl">{category.icon}</span>
+            <h3 class="text-xl font-semibold text-white">{category.title}</h3>
+          </div>
+
+          <div class="space-y-4">
+            {category.skills.map((skill) => (
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-gray-300 text-sm">{skill.name}</span>
+                  <span class="text-gray-500 text-sm">{skill.level}%</span>
+                </div>
+                <div class="h-2 bg-dark-border rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000"
+                    style={`width: ${skill.level}%`}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Additional Skills Tags -->
+    <div class="mt-12 text-center">
+      <h3 class="text-lg font-semibold text-white mb-4">Also experienced with</h3>
+      <div class="flex flex-wrap justify-center gap-2">
+        {['gRPC', 'GraphQL', 'RabbitMQ', 'Kafka', 'WebSocket', 'OAuth2', 'JWT', 'Git', 'ArgoCD', 'Prometheus', 'Grafana', 'Security', 'Networking', 'Dart', 'Kotlin'].map((skill) => (
+          <span class="skill-badge">{skill}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
