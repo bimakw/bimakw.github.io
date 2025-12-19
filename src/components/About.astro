@@ -10,28 +10,28 @@ const highlights = [
 <section id="about" class="py-20">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="section-title text-center">About Me</h2>
-    <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+    <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
       A brief introduction about who I am and what I do
     </p>
 
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <!-- Text Content -->
       <div class="space-y-6">
-        <p class="text-gray-300 leading-relaxed">
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
           I'm a <span class="text-primary font-semibold">Technical Lead</span> based in Jakarta
           with a passion for building scalable, maintainable systems. My journey in software
           engineering started 6+ years ago, and I've since grown from a backend developer
           to leading cross-functional teams.
         </p>
 
-        <p class="text-gray-300 leading-relaxed">
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
           I specialize in <span class="text-primary">microservices architecture</span>,
           <span class="text-primary">cloud infrastructure</span>, and
           <span class="text-primary">system design</span>. I enjoy solving complex problems
           and turning business requirements into elegant technical solutions.
         </p>
 
-        <p class="text-gray-300 leading-relaxed">
+        <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
           When I'm not coding, I'm exploring new technologies, contributing to open-source
           projects, and mentoring junior developers. I believe in continuous learning and
           sharing knowledge with the community.
@@ -42,7 +42,7 @@ const highlights = [
           {highlights.map((item) => (
             <div class="text-center">
               <div class="text-2xl md:text-3xl font-bold gradient-text">{item.number}</div>
-              <div class="text-gray-500 text-sm">{item.label}</div>
+              <div class="text-gray-500 dark:text-gray-500 text-sm">{item.label}</div>
             </div>
           ))}
         </div>
@@ -52,13 +52,13 @@ const highlights = [
       <div class="relative">
         <div class="card p-8">
           <div class="space-y-4">
-            <div class="flex items-center gap-2 text-gray-400">
+            <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400">
               <span class="w-3 h-3 rounded-full bg-red-500"></span>
               <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
               <span class="w-3 h-3 rounded-full bg-green-500"></span>
               <span class="ml-2 font-mono text-sm">about.json</span>
             </div>
-            <pre class="text-sm font-mono overflow-x-auto"><code class="text-gray-300">{`{
+            <pre class="text-sm font-mono overflow-x-auto"><code class="text-gray-700 dark:text-gray-300">{`{
   "name": "Bima Kharisma Wicaksana",
   "role": "Technical Lead",
   "location": "Jakarta, Indonesia",
