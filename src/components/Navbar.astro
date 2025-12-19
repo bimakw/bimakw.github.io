@@ -1,4 +1,6 @@
 ---
+import ThemeToggle from './ThemeToggle.astro';
+
 const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
@@ -23,6 +25,7 @@ const navLinks = [
             {link.label}
           </a>
         ))}
+        <ThemeToggle />
         <a
           href="/resume.pdf"
           target="_blank"
