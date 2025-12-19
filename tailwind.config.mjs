@@ -12,6 +12,11 @@ export default {
           card: '#161b22',
           border: '#30363d',
         },
+        light: {
+          bg: '#ffffff',
+          card: '#f8fafc',
+          border: '#e2e8f0',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

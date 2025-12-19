@@ -10,11 +10,25 @@
   }
 
   body {
-    @apply bg-dark-bg text-gray-100 font-sans;
+    @apply font-sans transition-colors duration-300;
+  }
+
+  /* Dark mode body (default) */
+  .dark body {
+    @apply bg-dark-bg text-gray-100;
+  }
+
+  /* Light mode body */
+  body {
+    @apply bg-light-bg text-gray-900;
+  }
+
+  .dark ::selection {
+    @apply bg-primary/30 text-white;
   }
 
   ::selection {
-    @apply bg-primary/30 text-white;
+    @apply bg-primary/30;
   }
 }
 
@@ -27,16 +41,34 @@
     @apply px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-white font-medium rounded-lg transition-all duration-300;
   }
 
+  /* Card component */
   .card {
-    @apply bg-dark-card border border-dark-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300;
+    @apply rounded-xl p-6 transition-all duration-300;
+  }
+
+  .dark .card {
+    @apply bg-dark-card border border-dark-border hover:border-primary/50;
+  }
+
+  .card {
+    @apply bg-light-card border border-light-border shadow-sm hover:shadow-md;
   }
 
   .section-title {
     @apply text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
 
+  /* Nav link */
   .nav-link {
-    @apply text-gray-400 hover:text-primary transition-colors duration-300;
+    @apply transition-colors duration-300 hover:text-primary;
+  }
+
+  .dark .nav-link {
+    @apply text-gray-400;
+  }
+
+  .nav-link {
+    @apply text-gray-600;
   }
 
   .skill-badge {
@@ -84,6 +116,10 @@
 }
 
 /* Code block styling */
-code {
+.dark code {
   @apply font-mono bg-dark-card px-2 py-1 rounded text-sm text-primary;
+}
+
+code {
+  @apply font-mono bg-gray-100 px-2 py-1 rounded text-sm text-primary;
 }
