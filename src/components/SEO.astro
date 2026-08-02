@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title,
-  description = "Bima Kharisma Wicaksana - Technical Lead & Backend Architect with 6+ years experience building scalable systems for 100K+ users.",
+  description = "Bima Kharisma Wicaksana - Technical Lead & Backend Architect, sekaligus praktisi E-commerce & Marketplace Operations. 7+ tahun software engineering + operasional e-commerce multi-kategori.",
   image = "/og-image.png",
   type = "website",
   publishedTime,
@@ -38,7 +38,8 @@ const personSchema = {
   "email": "bimakw20@gmail.com",
   "sameAs": [
     "https://github.com/bimakw",
-    "https://www.linkedin.com/in/bima-kharisma-wicaksana-aa3981153/"
+    "https://www.linkedin.com/in/bima-kharisma-wicaksana-aa3981153/",
+    "https://bima-commerce-portfolio.vercel.app/"
   ],
   "knowsAbout": [
     "Go Programming",
@@ -48,7 +49,25 @@ const personSchema = {
     "Cloud Architecture",
     "Microservices",
     "System Design",
-    "Backend Development"
+    "Backend Development",
+    "E-commerce Operations",
+    "Marketplace Management",
+    "Inventory & Order Operations",
+    "SKU & Margin Management"
+  ],
+  "hasOccupation": [
+    {
+      "@type": "Occupation",
+      "name": "Technical Lead & Backend Architect",
+      "occupationLocation": { "@type": "City", "name": "Jakarta, Indonesia" },
+      "skills": "Golang, Rust, .NET Core, Kubernetes, GCP, AWS, DDD, Microservices"
+    },
+    {
+      "@type": "Occupation",
+      "name": "E-commerce & Marketplace Operations Specialist",
+      "occupationLocation": { "@type": "City", "name": "Jakarta, Indonesia" },
+      "skills": "Multi-category online selling, Order & Inventory Management, Marketplace Operations, Repeat Customer Retention, SKU & Margin Discipline"
+    }
   ]
 };
 
@@ -82,7 +101,11 @@ const breadcrumbSchema = {
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta name="author" content="Bima Kharisma Wicaksana" />
-<meta name="keywords" content="Bima Kharisma Wicaksana, Technical Lead, Backend Architect, Cloud Engineer, Go Developer, Rust Developer, Kubernetes, GCP, AWS, System Design, Microservices, Jakarta, Indonesia" />
+<meta name="keywords" content="Bima Kharisma Wicaksana, Technical Lead, Backend Architect, Cloud Engineer, Go Developer, Rust Developer, Kubernetes, GCP, AWS, System Design, Microservices, Jakarta, Indonesia, E-commerce Operations, Marketplace Operations, Marketplace Manager, SKU Management, Inventory Operations" />
+
+<!-- Cross-domain identity link (rel="me" is a web standard for cross-domain identity verification) -->
+<link rel="me" href="https://bima-commerce-portfolio.vercel.app/" />
+<meta property="og:see_also" content="https://bima-commerce-portfolio.vercel.app/" />
 <meta name="robots" content="index, follow" />
 <meta name="language" content="English" />
 <meta name="revisit-after" content="7 days" />

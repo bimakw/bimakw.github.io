@@ -1,0 +1,110 @@
+---
+// BeyondEngineering.astro
+// Cross-domain section: introduces Bima's hands-on E-commerce & Marketplace Operations work
+// separate from engineering career. Links to bima-commerce-portfolio.vercel.app
+
+const commercePortfolioUrl = "https://bima-commerce-portfolio.vercel.app/";
+---
+
+<section id="beyond-engineering" class="py-20 bg-gradient-to-br from-primary/5 via-transparent to-purple-500/5 relative overflow-hidden">
+  <!-- Background flourish -->
+  <div class="absolute top-0 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <h2 class="section-title text-center">Beyond Engineering</h2>
+    <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+      Software engineering is my primary craft. Outside of it, I run a hands-on
+      <span class="text-primary font-semibold">multi-category e-commerce operation</span>
+      — managing products, orders, inventory, and customers in the field.
+      The same operational discipline I apply to backend systems, I apply to running a real business.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <!-- Narrative card with mock JSON -->
+      <div class="card p-8 space-y-4">
+        <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400 mb-2">
+          <span class="w-3 h-3 rounded-full bg-red-500"></span>
+          <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+          <span class="w-3 h-3 rounded-full bg-green-500"></span>
+          <span class="ml-2 font-mono text-sm">commerce-operator.json</span>
+        </div>
+        <pre class="text-sm font-mono overflow-x-auto"><code class="text-gray-700 dark:text-gray-300">&#123;
+  "operator_since": "2020",
+  "operating_model": "Solo + lean support team",
+  "categories_handled": [
+    "Essential goods",
+    "Lifestyle products",
+    "Food &amp; snacks"
+  ],
+  "duration": "4+ years continuous operation",
+  "focus": [
+    "Order pipeline hygiene",
+    "Repeat customer retention",
+    "SKU &amp; margin discipline",
+    "Channel diversification"
+  ],
+  "available_for": "Marketplace &amp; E-commerce Ops roles"
+&#125;</code></pre>
+        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed pt-4">
+          I don't treat commerce as a side hobby. I've run multi-category operations through
+          demand shifts, supply issues, and channel changes — the same kind of operational
+          pressure that a remote E-commerce / Marketplace Operations role demands.
+        </p>
+      </div>
+
+      <!-- CTA card -->
+      <div class="space-y-6">
+        <div class="card p-8 hover:glow">
+          <div class="flex items-start gap-4 mb-4">
+            <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                E-commerce &amp; Marketplace Operations
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                A dedicated portfolio covering operational case studies, an Operations Lab
+                (Product &amp; SKU Master, Order Control Board, Inventory &amp; Reorder, Margin Guardrail),
+                and responsible work practices.
+              </p>
+            </div>
+          </div>
+          <ul class="space-y-2 mb-6">
+            <li class="text-gray-700 dark:text-gray-300 text-sm flex items-start gap-2">
+              <span class="text-primary mt-1 flex-shrink-0">▹</span>
+              <span>Operational case studies from real multi-category selling</span>
+            </li>
+            <li class="text-gray-700 dark:text-gray-300 text-sm flex items-start gap-2">
+              <span class="text-primary mt-1 flex-shrink-0">▹</span>
+              <span>Operations Lab with templates for product, order, inventory &amp; margin</span>
+            </li>
+            <li class="text-gray-700 dark:text-gray-300 text-sm flex items-start gap-2">
+              <span class="text-primary mt-1 flex-shrink-0">▹</span>
+              <span>Honest framing: synthesized demos clearly labeled, no inflated claims</span>
+            </li>
+          </ul>
+          <a
+            href={commercePortfolioUrl}
+            target="_blank"
+            rel="noopener"
+            class="btn-primary inline-flex items-center gap-2 w-full justify-center sm:w-auto"
+          >
+            Open Commerce Portfolio
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Secondary note -->
+        <div class="text-center text-gray-500 dark:text-gray-500 text-sm italic">
+          Available for Indonesia-based and remote E-commerce / Marketplace Operations roles.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

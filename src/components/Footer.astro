@@ -5,9 +5,22 @@ const currentYear = new Date().getFullYear();
 <footer class="py-8 border-t border-gray-200 dark:border-dark-border bg-white dark:bg-dark-bg">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-      <!-- Copyright -->
+      <!-- Copyright + Commerce Cross-link -->
       <p class="text-gray-600 dark:text-gray-500 text-sm">
         © {currentYear} Bima Kharisma Wicaksana. All rights reserved.
+        <span class="mx-2 hidden sm:inline">·</span>
+        <br class="sm:hidden" />
+        <a
+          href="https://bima-commerce-portfolio.vercel.app/"
+          target="_blank"
+          rel="noopener"
+          class="hover:text-primary transition-colors inline-flex items-center gap-1"
+        >
+          Commerce Portfolio
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+          </svg>
+        </a>
       </p>
 
       <!-- Social Links -->
