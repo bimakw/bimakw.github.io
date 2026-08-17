@@ -1,6 +1,6 @@
 # bimakw.github.io
 
-Personal portfolio website - Technical Lead & Backend Architect
+Personal portfolio website - Senior Cloud Infrastructure Engineer
 
 **Live:** https://bimakw.github.io
 
